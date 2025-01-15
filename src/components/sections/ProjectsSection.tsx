@@ -1,72 +1,41 @@
 "use client";
 
-import React from "react";
+import { useRouter } from "next/navigation";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import { PROJECTS } from "../../utils/constants";
 
 const ProjectsSection = () => {
-  const projects = [
-    {
-      id: 1,
-      title: "E-commerce Platform",
-      description:
-        "A full-stack e-commerce solution with real-time inventory management and payment processing.",
-      technologies: ["Next.js", "Node.js", "MongoDB", "Stripe"],
-      image: "/project1.jpg",
-      githubLink: "https://github.com/yourusername/project1",
-      liveLink: "https://project1.com",
-    },
-    {
-      id: 2,
-      title: "Task Management App",
-      description:
-        "Collaborative task management tool with real-time updates and team collaboration features.",
-      technologies: ["React", "Firebase", "Tailwind CSS"],
-      image: "/project2.jpg",
-      githubLink: "https://github.com/yourusername/project2",
-      liveLink: "https://project2.com",
-    },
-    {
-      id: 3,
-      title: "AI Image Generator",
-      description:
-        "Web application that generates images using AI models with customizable parameters.",
-      technologies: ["Python", "FastAPI", "React", "TensorFlow"],
-      image: "/project3.jpg",
-      githubLink: "https://github.com/yourusername/project3",
-      liveLink: "https://project3.com",
-    },
-  ];
+  const router = useRouter();
 
   return (
-    <div className="min-h-screen bg-white py-20 px-4">
+    <div className="min-h-screen bg-white py-20 mt-20 px-4">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold text-gray-800 mb-12 text-center">
           Projects
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project) => (
+          {PROJECTS.map((project) => (
             <div
               key={project.id}
-              className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
+              className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 cursor-pointer"
+              onClick={() => router.push(`/project/${project.id}`)}
             >
-              {/* Project Image */}
               <div className="h-48 bg-gray-200 relative overflow-hidden">
                 <img
-                  src="/api/placeholder/400/320"
+                  src={project.images[0]}
                   alt={project.title}
                   className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-300"
                 />
+                <div className="absolute inset-0 bg-black opacity-0 hover:opacity-10 transition-opacity duration-300" />
               </div>
 
-              {/* Project Content */}
               <div className="p-6 space-y-4">
                 <h3 className="text-xl font-semibold text-gray-800">
                   {project.title}
                 </h3>
-                <p className="text-gray-600">{project.description}</p>
+                <p className="text-gray-600">{project.shortDescription}</p>
 
-                {/* Technologies */}
                 <div className="flex flex-wrap gap-2">
                   {project.technologies.map((tech) => (
                     <span
@@ -78,8 +47,10 @@ const ProjectsSection = () => {
                   ))}
                 </div>
 
-                {/* Links */}
-                <div className="flex space-x-4 pt-4">
+                <div
+                  className="flex space-x-4 pt-4"
+                  onClick={(e) => e.stopPropagation()}
+                >
                   <a
                     href={project.githubLink}
                     target="_blank"

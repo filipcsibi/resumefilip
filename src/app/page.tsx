@@ -4,6 +4,7 @@ import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 import ExperienceSection from "@/components/sections/ExperienceSection";
 import { useEffect, useState } from "react";
 import ProjectsSection from "@/components/sections/ProjectsSection";
+import EduSkillsSection from "@/components/sections/EduSkillsSection";
 
 export default function Home() {
   const [scrollY, setScrollY] = useState(0);
@@ -46,41 +47,41 @@ export default function Home() {
             >
               {/* Name */}
               <h1 className="text-6xl font-bold text-gray-800 tracking-tight animate-fade-in-up">
-                John Doe
+                Filip Csibi
               </h1>
 
               {/* Description */}
               <p className="text-xl text-gray-600 animate-fade-in">
                 Full Stack Developer passionate about creating elegant solutions
-                to complex problems. Specialized in React, Node.js, and cloud
-                architecture.
+                to complex problems. Specialized in React/React-Native,
+                Firebase, and typescript.
               </p>
 
               {/* Social Icons */}
               <div className="flex justify-center space-x-6 pt-4 animate-fade-in">
                 <a
-                  href="https://github.com"
+                  href="https://github.com/filipcsibi"
                   className="text-gray-600 hover:text-gray-900 transition-colors transform hover:-translate-y-1 duration-200"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaGithub size={28} />
+                  <FaGithub size={36} />
                 </a>
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/in/filip-csibi-5a2093266/"
                   className="text-gray-600 hover:text-gray-900 transition-colors transform hover:-translate-y-1 duration-200"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaLinkedin size={28} />
+                  <FaLinkedin size={36} />
                 </a>
                 <a
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/filip_csibi/"
                   className="text-gray-600 hover:text-gray-900 transition-colors transform hover:-translate-y-1 duration-200"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaInstagram size={28} />
+                  <FaInstagram size={36} />
                 </a>
               </div>
             </div>
@@ -112,6 +113,15 @@ export default function Home() {
         }}
       >
         <ProjectsSection />
+      </div>
+
+      <div
+        style={{
+          transform: `translateY(${Math.max(0, (scrollY - 1000) * 0.1)}px)`,
+          opacity: Math.min(1, Math.max(0, (scrollY - 800) / 400)),
+        }}
+      >
+        <EduSkillsSection />
       </div>
     </main>
   );

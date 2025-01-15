@@ -1,3 +1,4 @@
+"use client";
 import { experiences } from "@/utils/constants";
 import React from "react";
 
