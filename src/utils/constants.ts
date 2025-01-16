@@ -68,7 +68,7 @@ export const PROJECTS: ProjectType[] = [
       "/poordecisions/5.PNG",
       "/poordecisions/6.PNG",
     ],
-    cardImage: "/main/pour.png",
+    cardImage: "/main/pour.PNG",
     githubLink: "https://github.com/filipcsibi/pourdecisions",
     liveLink:
       "https://expo.dev/preview/update?message=done%20with%20translations%2C%20added%20some%20questions%2C%20pretty%20much%20done&updateRuntimeVersion=1.0.0&createdAt=2025-01-14T17%3A59%3A08.929Z&slug=exp&projectId=4b62616b-1a52-4266-9cba-1a41ffd48bd6&group=b735517c-93c5-4d94-921f-e465692d1874",
@@ -88,7 +88,7 @@ export const PROJECTS: ProjectType[] = [
       "/circlrr/4.PNG",
       "/circlrr/5.PNG",
     ],
-    cardImage: "/main/circlr.png",
+    cardImage: "/main/circlr.PNG",
     liveLink:
       "https://expo.dev/preview/update?message=change%20password&updateRuntimeVersion=1.0.0&createdAt=2025-01-10T20%3A29%3A24.216Z&slug=exp&projectId=c11a7172-5234-42a9-815a-8a101d66d81e&group=9b48108c-d60e-4389-badb-27d34a03299c",
     githubLink: "https://github.com/filipcsibi/circlr",
