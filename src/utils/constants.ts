@@ -46,6 +46,7 @@ export interface ProjectType {
   description: string;
   technologies: string[];
   images: string[];
+  cardImage: string;
   githubLink: string;
   liveLink?: string;
   achievements?: string[];
@@ -54,46 +55,63 @@ export interface ProjectType {
 export const PROJECTS: ProjectType[] = [
   {
     id: 1,
+    title: "Pour Decisions",
+    shortDescription: "The ultimate drinking card game",
+    description:
+      "A drinking game app that turns your party into an unforgettable night of dares, truths, and shots. Mix fun challenges with perfect ice-breakers, all while keeping track of who drinks what.",
+    technologies: ["React Native", "TypeScript", "Expo", "Firebase"],
+    images: [
+      "/poordecisions/1.PNG",
+      "/poordecisions/2.PNG",
+      "/poordecisions/3.PNG",
+      "/poordecisions/4.PNG",
+      "/poordecisions/5.PNG",
+      "/poordecisions/6.PNG",
+    ],
+    cardImage: "/main/pour.png",
+    githubLink: "https://github.com/filipcsibi/pourdecisions",
+    liveLink:
+      "https://expo.dev/preview/update?message=done%20with%20translations%2C%20added%20some%20questions%2C%20pretty%20much%20done&updateRuntimeVersion=1.0.0&createdAt=2025-01-14T17%3A59%3A08.929Z&slug=exp&projectId=4b62616b-1a52-4266-9cba-1a41ffd48bd6&group=b735517c-93c5-4d94-921f-e465692d1874",
+  },
+
+  {
+    id: 2,
+    title: "Circlr",
+    shortDescription: "Social Media App",
+    description:
+      "Circlr is a social media app that allows users to share their thoughts, photos, and videos. The app is built with React Native and uses Firebase for authentication and storage.",
+    technologies: ["React Native", "TypeScript", "Expo", "Firebase", "CSS"],
+    images: [
+      "/circlrr/1.PNG",
+      "/circlrr/2.PNG",
+      "/circlrr/3.PNG",
+      "/circlrr/4.PNG",
+      "/circlrr/5.PNG",
+    ],
+    cardImage: "/main/circlr.png",
+    liveLink:
+      "https://expo.dev/preview/update?message=change%20password&updateRuntimeVersion=1.0.0&createdAt=2025-01-10T20%3A29%3A24.216Z&slug=exp&projectId=c11a7172-5234-42a9-815a-8a101d66d81e&group=9b48108c-d60e-4389-badb-27d34a03299c",
+    githubLink: "https://github.com/filipcsibi/circlr",
+  },
+  {
+    id: 3,
     title: "DECYCLER",
-    shortDescription:
-      "A React Native mobile app for ecological rubble disposal",
+    shortDescription: "Ecological rubble disposal app",
     description:
       "Decycler is a mobile app built with React Native Expo that allows users to post their rubble so that other companies can safely and ecologically dispose of it for a fee. The app uses Firebase as a backend and integrates Google Maps API for location selection.",
-    technologies: ["React Native", "Expo", "Firebase", "Google Maps API"],
+    technologies: [
+      "React Native",
+      "JavaScript",
+      "Expo",
+      "Firebase",
+      "Google Maps API",
+    ],
     images: ["/decycler/1.png", "/decycler/2.png", "/decycler/3.png"],
+    cardImage: "/main/decycler.png",
     githubLink: "https://github.com/filipcsibi/decycler",
     achievements: [
       "Won The Special Prize For The Best Mobile Experience at PoliHack",
     ],
-  },
-  {
-    id: 2,
-    title: "OFFICE REVIVE",
-    shortDescription: "A Progressive Web App for improving company culture",
-    description:
-      "Office Revive is a unique tool that aims to improve company culture and productivity by providing a platform for internal communication, collaboration and socialization among team members. Built with TypeScript and Vite, using MongoDB for backend and MUI elements for the interface.",
-    technologies: ["React", "TypeScript", "Vite", "MongoDB", "MUI"],
-    images: [
-      "/api/placeholder/280/580?text=Dashboard",
-      "/api/placeholder/280/580?text=Team Chat",
-      "/api/placeholder/280/580?text=Collaboration Tools",
-    ],
-    githubLink: "https://github.com/filipcsibi/Office-Revive",
-  },
-  {
-    id: 3,
-    title: "CARAOKE",
-    shortDescription: "The ultimate carpool karaoke app",
-    description:
-      "Welcome to Caraoke, the ultimate carpool karaoke app! With Caraoke, you and your friends can compete to be crowned the singing superstar of your ride. The app uses Speech to Text technology to create an engaging karaoke experience.",
-    technologies: ["React Native", "Expo", "Speech to Text"],
-    images: [
-      "/api/placeholder/280/580?text=Song Selection",
-      "/api/placeholder/280/580?text=Karaoke Screen",
-      "/api/placeholder/280/580?text=Leaderboard",
-    ],
-    githubLink: "https://github.com/filipcsibi/caraoke",
-    achievements: ["Won 2nd Place at HackTM from Continental"],
   },
 ];
 

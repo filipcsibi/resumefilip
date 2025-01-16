@@ -23,7 +23,7 @@ const ProjectsSection = () => {
             >
               <div className="h-48 bg-gray-200 relative overflow-hidden">
                 <img
-                  src={project.images[0]}
+                  src={project.cardImage}
                   alt={project.title}
                   className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-300"
                 />
@@ -60,15 +60,17 @@ const ProjectsSection = () => {
                     <FaGithub size={20} />
                     <span>Code</span>
                   </a>
-                  <a
-                    href={project.liveLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center space-x-2 text-gray-600 hover:text-gray-900 transition-colors"
-                  >
-                    <FaExternalLinkAlt size={18} />
-                    <span>Live Demo</span>
-                  </a>
+                  {project.liveLink && (
+                    <a
+                      href={project.liveLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center space-x-2 text-gray-600 hover:text-gray-900 transition-colors"
+                    >
+                      <FaExternalLinkAlt size={18} />
+                      <span>Live Demo</span>
+                    </a>
+                  )}
                 </div>
               </div>
             </div>

@@ -18,7 +18,7 @@ const PhoneMockup = ({ image }: { image: string }) => (
       <img
         src={image}
         alt="App screenshot"
-        className="w-full h-full object-stretch"
+        className="w-full h-full object-cover"
       />
     </div>
   </div>
@@ -100,19 +100,21 @@ export default function ProjectPage({ params }: PageProps) {
               <FaGithub size={20} />
               <span>View Code</span>
             </a>
-            <a
-              href={project.liveLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center space-x-2 text-gray-600 hover:text-gray-900 transition-colors"
-            >
-              <FaExternalLinkAlt size={18} />
-              <span>Live Demo</span>
-            </a>
+            {project.liveLink && (
+              <a
+                href={project.liveLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center space-x-2 text-gray-600 hover:text-gray-900 transition-colors"
+              >
+                <FaExternalLinkAlt size={18} />
+                <span>Live Demo</span>
+              </a>
+            )}
           </div>
         </div>
 
-        <div className="relative w-full lg:w-1/2 h-[600px] perspective-1000">
+        <div className="relative w-full lg:w-1/2 h-[650px] perspective-1000">
           <div className="relative w-full h-full flex justify-center items-center">
             <div
               className="absolute transform -translate-x-32 scale-75 opacity-40 cursor-pointer hover:opacity-60 transition-all duration-500"
