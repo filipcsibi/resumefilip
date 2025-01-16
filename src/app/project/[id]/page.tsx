@@ -39,7 +39,7 @@ export default function ProjectPage({ params }: PageProps) {
             Project Not Found
           </h1>
           <p className="text-gray-600 mb-8">
-            The project you're looking for doesn't exist.
+            The project youre looking for doesnt exist.
           </p>
           <button
             onClick={() => router.push("/")}

@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 import "../styles/globals.css";
 import { Playfair_Display } from "next/font/google";
+
+const playfair = Playfair_Display({ subsets: ["latin"] });
+
 export const metadata: Metadata = {
   title: "Your Name - Resume",
   description: "Personal resume website",
 };
-export const playfair = Playfair_Display({ subsets: ["latin"] });
 
 export default function RootLayout({
   children,
