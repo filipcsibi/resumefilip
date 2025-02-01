@@ -71,7 +71,7 @@ export const PROJECTS: ProjectType[] = [
     cardImage: "/main/pour.PNG",
     githubLink: "https://github.com/filipcsibi/pourdecisions",
     liveLink:
-      "https://expo.dev/preview/update?message=done%20with%20translations%2C%20added%20some%20questions%2C%20pretty%20much%20done&updateRuntimeVersion=1.0.0&createdAt=2025-01-14T17%3A59%3A08.929Z&slug=exp&projectId=4b62616b-1a52-4266-9cba-1a41ffd48bd6&group=b735517c-93c5-4d94-921f-e465692d1874",
+      "https://expo.dev/preview/update?message=bug%20fixed&updateRuntimeVersion=1.0.0&createdAt=2025-02-01T21%3A50%3A45.139Z&slug=exp&projectId=4b62616b-1a52-4266-9cba-1a41ffd48bd6&group=ea8b7555-467d-43a8-9467-478a7eb6bf50",
   },
 
   {
