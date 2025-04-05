@@ -19,7 +19,7 @@ export default function RootLayout({
       <head>
         <meta
           name="google-site-verification"
-          content="LUHkDvV-puaP5qwrkEJ6b5QpLzBjLdO7EByqAXrFg0Q"
+          content="oEpg69vV_8MXGx_FBcqdXhiK6voQzyLrDwnbeRWrrbQ"
         />
       </head>
       <body className={playfair.className}>{children}</body>
