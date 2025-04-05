@@ -16,6 +16,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <meta
+          name="google-site-verification"
+          content="LUHkDvV-puaP5qwrkEJ6b5QpLzBjLdO7EByqAXrFg0Q"
+        />
+      </head>
       <body className={playfair.className}>{children}</body>
     </html>
   );
