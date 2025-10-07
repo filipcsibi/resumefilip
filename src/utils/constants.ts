@@ -21,21 +21,29 @@ export const experiences: ExperienceType[] = [
   },
   {
     id: 2,
-    role: "Sales Consultant",
-    company: "iStyle Retail SRL",
-    period: "July 2023 - September 2023",
+    role: "Intern Analyst",
+    company: "Accenture",
+    period: "June 2025 - August 2025",
     description:
-      "Refined social skills through customer interaction and team collaboration. Developed patience and communication skills while meeting customer needs.",
-    technologies: ["Sales", "Customer Service", "Team Collaboration"],
+      "Technologies utilized include Java, Spring Boot 2.7, Spring Data JPA, PostgreSQL, Windchill 13 PLM, REST APIs, Maven, and Git.",
+    technologies: ["JAVA", "Spring Boot", "PostgreSQL", "REST APIs", "Maven"],
   },
   {
     id: 3,
-    role: "Social Media Content Creator",
-    company: "FORM University",
-    period: "April 2024 - present",
+    role: "React/React-Native Developer",
+    company: "Freelance",
+    period: "June 2025 - present",
     description:
-      "Creating engaging social media content, developing creative strategies for audience engagement, and mastering concise communication techniques.",
-    technologies: ["Content Creation", "Social Media", "Communication"],
+      "I design and develop high-quality websites and mobile applications that attract real users, using modern technologies like React, React Native, Redux, TypeScript, Tailwind, Next.js, and Expo.",
+    technologies: [
+      "React",
+      "React-Native",
+      "Next.JS",
+      "Expo",
+      "Redux",
+      "Firebase",
+      "Appwrite",
+    ],
   },
 ];
 
@@ -155,18 +163,7 @@ export const volunteering = [
 ];
 
 export const skills = {
-  technical: [
-    "Java",
-    "C/C++/C#",
-    "Python",
-    "JavaScript",
-    "TypeScript",
-    "PHP",
-    "MySQL",
-    "HTML",
-    "CSS",
-    "Tailwind",
-  ],
+  technical: ["Java", "C/C++/C#", "JavaScript", "TypeScript", "MySQL"],
   software: ["MS Office (Word, Excel, PowerPoint)", "Outlook", "Salesforce"],
   languages: ["English", "Romanian"],
   soft: ["CAPABLE", "TRUSTWORTHY", "CHARISMATIC"],

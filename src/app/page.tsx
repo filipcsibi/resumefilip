@@ -52,9 +52,9 @@ export default function Home() {
 
               {/* Description */}
               <p className="text-xl text-gray-600 animate-fade-in">
-                Full Stack Developer passionate about creating elegant solutions
-                to complex problems. Specialized in React/React-Native,
-                Firebase, and typescript.
+                Full Stack Developer with 2-3 years of experience, passionate
+                about creating elegant solutions to complex problems.
+                Specialized in React/React-Native and Spring Boot.
               </p>
 
               {/* Social Icons */}
