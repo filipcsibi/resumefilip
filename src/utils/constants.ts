@@ -164,7 +164,13 @@ export const volunteering = [
 
 export const skills = {
   technical: ["Java", "C/C++/C#", "JavaScript", "TypeScript", "MySQL"],
-  software: ["MS Office (Word, Excel, PowerPoint)", "Outlook", "Salesforce"],
+  software: [
+    "MS Office (Word, Excel, PowerPoint)",
+    "Outlook",
+    "Salesforce",
+    "Figma",
+    "Canva",
+  ],
   languages: ["English", "Romanian"],
   soft: ["CAPABLE", "TRUSTWORTHY", "CHARISMATIC"],
 };

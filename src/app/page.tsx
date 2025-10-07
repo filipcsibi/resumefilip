@@ -85,8 +85,6 @@ export default function Home() {
                 </a>
               </div>
             </div>
-
-            {/* Scroll Indicator - now part of the flex column */}
             <div className="animate-bounce ">
               <div className="w-6 h-10 border-2 border-gray-400 rounded-full flex justify-center relative">
                 <div className="w-1 h-3 bg-gray-400 rounded-full mt-2 animate-scroll-down"></div>
