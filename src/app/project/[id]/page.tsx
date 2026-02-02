@@ -2,7 +2,7 @@
 
 import { useState, use } from "react";
 import { useRouter } from "next/navigation";
-import { FaGithub, FaExternalLinkAlt, FaArrowLeft } from "react-icons/fa";
+import { FaExternalLinkAlt, FaArrowLeft } from "react-icons/fa";
 import { getProjectById } from "../../../utils/constants";
 
 interface PageProps {
@@ -90,28 +90,19 @@ export default function ProjectPage({ params }: PageProps) {
             ))}
           </div>
 
-          <div className="flex space-x-4 pt-4">
-            <a
-              href={project.githubLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center space-x-2 text-gray-600 hover:text-gray-900 transition-colors"
-            >
-              <FaGithub size={20} />
-              <span>View Code</span>
-            </a>
-            {project.liveLink && (
+          {project.appStoreLink && (
+            <div className="flex space-x-4 pt-4">
               <a
-                href={project.liveLink}
+                href={project.appStoreLink}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center space-x-2 text-gray-600 hover:text-gray-900 transition-colors"
               >
                 <FaExternalLinkAlt size={18} />
-                <span>Live Demo</span>
+                <span>App Store</span>
               </a>
-            )}
-          </div>
+            </div>
+          )}
         </div>
 
         <div className="relative w-full lg:w-1/2 h-[650px] perspective-1000">

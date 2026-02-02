@@ -23,12 +23,14 @@ const ExperienceSection = () => {
               <div className="space-y-2">
                 <div className="flex justify-between items-start flex-wrap gap-2">
                   <h3 className="text-xl font-semibold text-gray-800">
-                    {exp.role}
+                    {exp.company}
                   </h3>
                   <span className="text-gray-500">{exp.period}</span>
                 </div>
 
-                <div className="text-gray-600 font-medium">{exp.company}</div>
+                <div className="text-gray text-lg font-semibold text-gray-700">
+                  {exp.role}
+                </div>
 
                 <p className="text-gray-600 leading-relaxed">
                   {exp.description}

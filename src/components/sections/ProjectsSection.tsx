@@ -1,7 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+import { FaExternalLinkAlt } from "react-icons/fa";
 import { PROJECTS } from "../../utils/constants";
 import Image from "next/image";
 
@@ -28,7 +28,7 @@ const ProjectsSection = () => {
                   alt={project.title}
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  className="object-cover transform hover:scale-105 transition-transform duration-300"
+                  className="transform hover:scale-105 transition-transform duration-300 object-cover bg-white"
                 />
                 <div className="absolute inset-0 bg-black opacity-0 hover:opacity-10 transition-opacity duration-300" />
               </div>
@@ -50,31 +50,22 @@ const ProjectsSection = () => {
                   ))}
                 </div>
 
-                <div
-                  className="flex space-x-4 pt-4"
-                  onClick={(e) => e.stopPropagation()}
-                >
-                  <a
-                    href={project.githubLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center space-x-2 text-gray-600 hover:text-gray-900 transition-colors"
+                {project.appStoreLink && (
+                  <div
+                    className="flex space-x-4 pt-4"
+                    onClick={(e) => e.stopPropagation()}
                   >
-                    <FaGithub size={20} />
-                    <span>Code</span>
-                  </a>
-                  {project.liveLink && (
                     <a
-                      href={project.liveLink}
+                      href={project.appStoreLink}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="flex items-center space-x-2 text-gray-600 hover:text-gray-900 transition-colors"
                     >
                       <FaExternalLinkAlt size={18} />
-                      <span>Live Demo</span>
+                      <span>App Store</span>
                     </a>
-                  )}
-                </div>
+                  </div>
+                )}
               </div>
             </div>
           ))}

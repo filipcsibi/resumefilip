@@ -12,38 +12,39 @@ export interface ExperienceType {
 export const experiences: ExperienceType[] = [
   {
     id: 1,
-    role: "React Native Developer",
-    company: "Linnify",
-    period: "April 2023 - May 2023",
+    role: "Software Engineer",
+    company: "Tapptitude",
+    period: "October 2024 - January 2025",
     description:
-      "Mastered code structuring and TypeScript while exploring React Native features. Used Zustand for state management, implemented animations with Reanimated, and worked with various features like debounce hooks, SVG handling, and API integration.",
-    technologies: ["React Native", "TypeScript", "Zustand", "Reanimated"],
+      "Engineered a high-performance electric scooter rental application. Optimized app performance by reducing API calls by 40% and improving load times by 35% through Zustand and TanStack Query.",
+    technologies: ["TypeScript", "Expo", "PostgreSQL"],
   },
   {
     id: 2,
-    role: "Intern Analyst",
+    role: "Software Engineer Intern",
     company: "Accenture",
     period: "June 2025 - August 2025",
     description:
-      "Technologies utilized include Java, Spring Boot 2.7, Spring Data JPA, PostgreSQL, Windchill 13 PLM, REST APIs, Maven, and Git.",
-    technologies: ["JAVA", "Spring Boot", "PostgreSQL", "REST APIs", "Maven"],
+      "Improved full-stack development skills as a member of the Windchill team. Built a highly requested feature for hundreds of enterprise users and independently addressed opportunities for refactoring and build process optimization.",
+    technologies: ["Java", "Spring Boot", "PostgreSQL", "Windchill", "REST"],
   },
   {
     id: 3,
-    role: "React/React-Native Developer",
+    role: "Software Developer",
     company: "Freelance",
-    period: "June 2025 - present",
+    period: "2025 - 2026",
     description:
-      "I design and develop high-quality websites and mobile applications that attract real users, using modern technologies like React, React Native, Redux, TypeScript, Tailwind, Next.js, and Expo.",
-    technologies: [
-      "React",
-      "React-Native",
-      "Next.JS",
-      "Expo",
-      "Redux",
-      "Firebase",
-      "Appwrite",
-    ],
+      "Deliver end-to-end scalable web and mobile solutions handling 1,000+ monthly active users. Increased client conversion rates by 30% through Core Web Vitals optimization and reduced turnaround time by 25% using reusable components.",
+    technologies: ["TypeScript", "Expo"],
+  },
+  {
+    id: 4,
+    role: "Software Intern",
+    company: "Linnify",
+    period: "April 2023 - May 2023",
+    description:
+      "Immersed into the React Native ecosystem, mastering mobile architecture and TypeScript best practices to contribute to production code within the first two weeks.",
+    technologies: ["TypeScript"],
   },
 ];
 
@@ -55,77 +56,70 @@ export interface ProjectType {
   technologies: string[];
   images: string[];
   cardImage: string;
-  githubLink: string;
-  liveLink?: string;
-  achievements?: string[];
+  appStoreLink?: string;
 }
 
 export const PROJECTS: ProjectType[] = [
   {
     id: 1,
-    title: "Pour Decisions",
-    shortDescription: "The ultimate drinking card game",
+    title: "SOTO: Party Starter",
+    shortDescription: "The ultimate friends card game",
     description:
-      "A drinking game app that turns your party into an unforgettable night of dares, truths, and shots. Mix fun challenges with perfect ice-breakers, all while keeping track of who drinks what.",
-    technologies: ["React Native", "TypeScript", "Expo", "Firebase"],
+      "A card game app that turns your party into an unforgettable night of dares, truths, and shots. Mix fun challenges with perfect ice-breakers, all while keeping track of who does what.",
+    technologies: ["TypeScript", "Expo", "Firebase"],
     images: [
-      "/poordecisions/1.PNG",
-      "/poordecisions/2.PNG",
-      "/poordecisions/3.PNG",
-      "/poordecisions/4.PNG",
-      "/poordecisions/5.PNG",
-      "/poordecisions/6.PNG",
+      "/soto/1.png",
+      "/soto/2.png",
+      "/soto/3.png",
+      "/soto/4.png",
+      "/soto/5.png",
     ],
-    cardImage: "/main/pour.PNG",
-    githubLink: "https://github.com/filipcsibi/pourdecisions",
-    liveLink:
-      "https://expo.dev/preview/update?message=bug%20fixed&updateRuntimeVersion=1.0.0&createdAt=2025-02-01T21%3A50%3A45.139Z&slug=exp&projectId=4b62616b-1a52-4266-9cba-1a41ffd48bd6&group=ea8b7555-467d-43a8-9467-478a7eb6bf50",
+    cardImage: "/main/soto.png",
+    appStoreLink:
+      "https://apps.apple.com/ro/app/soto-party-starter/id6745779753",
   },
 
   {
     id: 2,
-    title: "Circlr",
-    shortDescription: "Social Media App",
+    title: "CabinSplit",
+    shortDescription: "Trip managing for friends",
     description:
-      "Circlr is a social media app that allows users to share their thoughts, photos, and videos. The app is built with React Native and uses Firebase for authentication and storage.",
-    technologies: ["React Native", "TypeScript", "Expo", "Firebase", "CSS"],
+      "Create a group in the app, add friends with a unique code, and sort everything out quickly. You can instantly split any expense, from accommodation to gas + easily organize the cars, see exactly how many seats are free, and who is riding with whom.",
+    technologies: ["TypeScript", "Expo", "Supabase"],
     images: [
-      "/circlrr/1.PNG",
-      "/circlrr/2.PNG",
-      "/circlrr/3.PNG",
-      "/circlrr/4.PNG",
-      "/circlrr/5.PNG",
+      "/cabinsplit/1.png",
+      "/cabinsplit/2.png",
+      "/cabinsplit/3.png",
+      "/cabinsplit/4.png",
+      "/cabinsplit/5.png",
+      "/cabinsplit/6.png",
     ],
-    cardImage: "/main/circlr.PNG",
-    liveLink:
-      "https://expo.dev/preview/update?message=change%20password&updateRuntimeVersion=1.0.0&createdAt=2025-01-10T20%3A29%3A24.216Z&slug=exp&projectId=c11a7172-5234-42a9-815a-8a101d66d81e&group=9b48108c-d60e-4389-badb-27d34a03299c",
-    githubLink: "https://github.com/filipcsibi/circlr",
+    cardImage: "/main/cabinsplit.png",
+    appStoreLink: "https://apps.apple.com/ro/app/cabinsplit/id6755599069",
   },
   {
     id: 3,
-    title: "DECYCLER",
-    shortDescription: "Ecological rubble disposal app",
+    title: "MOVE",
+    shortDescription: "Scooter rental app",
     description:
-      "Decycler is a mobile app built with React Native Expo that allows users to post their rubble so that other companies can safely and ecologically dispose of it for a fee. The app uses Firebase as a backend and integrates Google Maps API for location selection.",
-    technologies: [
-      "React Native",
-      "JavaScript",
-      "Expo",
-      "Firebase",
-      "Google Maps API",
+      "Launch your fleet immediately with this high-performance e-scooter platform. Optimized for speed using TanStack Query, the app offers a seamless user experience with multiple unlocking options: NFC, QR, or PIN code.",
+    technologies: ["TypeScript", "Expo", "Supabase", "Retool"],
+    images: [
+      "/move/1.png",
+      "/move/2.png",
+      "/move/3.png",
+      "/move/4.png",
+      "/move/5.png",
+      "/move/6.png",
+      "/move/7.png",
     ],
-    images: ["/decycler/1.png", "/decycler/2.png", "/decycler/3.png"],
-    cardImage: "/main/decycler.png",
-    githubLink: "https://github.com/filipcsibi/decycler",
-    achievements: [
-      "Won The Special Prize For The Best Mobile Experience at PoliHack",
-    ],
+    cardImage: "/main/move.png",
   },
 ];
 
 // Helper function to find a project by ID
 export const getProjectById = (
-  id: string | number
+  id: string | number,
 ): ProjectType | undefined => {
   return PROJECTS.find((project) => project.id === Number(id));
 };

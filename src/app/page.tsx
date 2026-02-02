@@ -1,6 +1,6 @@
 "use client";
 
-import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaInstagram, FaDownload } from "react-icons/fa";
 import ExperienceSection from "@/components/sections/ExperienceSection";
 import { useEffect, useState } from "react";
 import ProjectsSection from "@/components/sections/ProjectsSection";
@@ -52,9 +52,9 @@ export default function Home() {
 
               {/* Description */}
               <p className="text-xl text-gray-600 animate-fade-in">
-                Full Stack Developer with 2-3 years of experience, passionate
+                Full Stack Developer with 3 years of experience, passionate
                 about creating elegant solutions to complex problems.
-                Specialized in React/React-Native and Spring Boot.
+                Specialized in TypeScript.
               </p>
 
               {/* Social Icons */}
@@ -82,6 +82,18 @@ export default function Home() {
                   rel="noopener noreferrer"
                 >
                   <FaInstagram size={36} />
+                </a>
+              </div>
+
+              {/* Download CV Button */}
+              <div className="flex justify-center pt-6 animate-fade-in">
+                <a
+                  href="/cv_Filip_Csibi.pdf"
+                  download="cv_Filip_Csibi.pdf"
+                  className="flex items-center space-x-3 px-6 py-3 bg-gray-800 text-white rounded-xl hover:bg-gray-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
+                >
+                  <FaDownload size={20} />
+                  <span className="font-medium">Download CV</span>
                 </a>
               </div>
             </div>
